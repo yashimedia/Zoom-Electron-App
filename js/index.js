@@ -105,17 +105,11 @@
           console.log(res.result);
           meetingConfig.signature = res.result;
           meetingConfig.apiKey = API_KEY;
-          const mainWindow = new BrowserWindow({
-            width: 800,
-            height: 600,
-            webPreferences: {
-              preload: path.join(__dirname, 'preload.js')
-            }
-          })
-          var joinUrl = "/meeting.html?" + testTool.serialize(meetingConfig);
-          console.log(joinUrl);
-          mainWindow.loadFile(joinUrl)
-          // window.open(joinUrl, "_blank");
+          
+          var joinUrl = "./meeting.html?" + testTool.serialize(meetingConfig);
+          console.log("USRL :",joinUrl);
+       
+           window.open(joinUrl, "_blank");
         },
       });
     });
