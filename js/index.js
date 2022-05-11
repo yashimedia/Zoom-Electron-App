@@ -13,7 +13,7 @@
   ZoomMtg.preLoadWasm(); // pre download wasm file to save time.
 
   //var API_KEY = "API_KEY";
-  var API_KEY = "3KcgjwEZQUGp07Qq9GJJuw";
+  var API_KEY = "";
 
   /**
    * NEVER PUT YOUR ACTUAL API SECRET IN CLIENT SIDE CODE, THIS IS JUST FOR QUICK PROTOTYPING
@@ -21,7 +21,7 @@
    * You can find an eaxmple in here: https://marketplace.zoom.us/docs/sdk/native-sdks/web/essential/signature
    */
   //var API_SECRET = "API_SECRET";
-  var API_SECRET = "tyJJqgc3zqXm6qAW7z8pWju455N6s0JkRY0Y";
+  var API_SECRET = "";
 
   // some help code, remember mn, pwd, lang to cookie, and autofill.
   document.getElementById("display_name").value =
